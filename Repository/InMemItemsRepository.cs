@@ -21,7 +21,7 @@ namespace Catalog.Repository
 				
 				public Item GetItem(Guid id)
 				{
-            return items.Where(items => item.Id == id).SingleOrDefault();
+            return items.Where(item => item.Id == id).SingleOrDefault();
         }
 		}
 }
