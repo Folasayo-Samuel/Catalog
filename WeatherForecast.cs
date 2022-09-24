@@ -1,5 +1,6 @@
 using Catalog.Repository;
 
+
 namespace Catalog;
 
 public class WeatherForecast
@@ -15,6 +16,7 @@ public class WeatherForecast
 public void ConfigureServices(IServiceCollection services)
 {
 		services.AddSingleton<IItemsRepository, InMemItemsRepository>();
+		services.AddHttpContextAccessor();
 
 }
 }
